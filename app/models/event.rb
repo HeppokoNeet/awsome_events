@@ -1,10 +1,11 @@
 class Event < ApplicationRecord
+    belongs_to :owner, class_name: "User"
     validates :name, length: { maximum: 50 },presence: true
-    validates :place, length: { maximum: 100 }, precedence: true
-    validates :content, length: { maximum: 2000 }, precedence: true
-    validates :start_at, precedence: true
-    validates :end_at, precedence: true
-    validates :start_at_should_be_before_end_at
+    validates :place, length: { maximum: 100 }, presence: true
+    validates :content, length: { maximum: 2000 }, presence: true
+    validates :start_at, presence: true
+    validates :end_at, presence: true
+    validate :start_at_should_be_before_end_at
 
     private
 
