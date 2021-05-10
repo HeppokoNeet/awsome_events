@@ -37,7 +37,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    active_storage_validations (0.8.9)
+    active_storage_validations (0.9.3)
       rails (>= 5.2.0)
     activejob (6.0.3.6)
       activesupport (= 6.0.3.6)
@@ -136,7 +136,7 @@ GEM
     method_source (1.0.0)
     mini_magick (4.11.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.0)
+    mini_portile2 (2.5.1)
     minitest (5.14.4)
     msgpack (1.4.2)
     multi_json (1.15.0)
@@ -269,7 +269,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_storage_validations (~> 0.8.8)
+  active_storage_validations (~> 0.9.3)
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
